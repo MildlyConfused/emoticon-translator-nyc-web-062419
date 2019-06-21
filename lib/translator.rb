@@ -16,9 +16,9 @@ end
 def get_japanese_emoticon(path, english_emoticon)
   # code goes here
   emos = load_library(path)
-  emos['get_emoticon'].each do |e, j|
-    if e == english_emoticon
-      return j
+  emos['get_emoticon'].each do |eng, jap|
+    if eng == english_emoticon
+      return jap
     end
   end
   return "Sorry, that emoticon was not found"
