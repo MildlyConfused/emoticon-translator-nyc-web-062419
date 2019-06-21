@@ -11,7 +11,6 @@ def load_library(path)
     return_hash['get_emoticon'][emoticons[0]] = emoticons[1]
   end
   return hash
-
 end
 
 def get_japanese_emoticon
