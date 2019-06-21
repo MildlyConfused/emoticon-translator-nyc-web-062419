@@ -15,8 +15,8 @@ end
 
 def get_japanese_emoticon(path, english_emoticon)
   # code goes here
-  emos = load_library(path)
-  emos['get_emoticon'].each do |eng, jap|
+  emoj = load_library(path)
+  load_library(path)['get_emoticon'].each do |eng, jap|
     if eng == english_emoticon
       return jap
     end
