@@ -25,9 +25,8 @@ end
 
 
 def get_english_meaning(path, japanese_emoticon)
-  emos = load_library(path)
-  emos['get_meaning'].each do |emo, meaning|
-    if emo == japanese_emoticon
+  load_library(path)['get_meaning'].each do |emoj, meaning|
+    if emoj == japanese_emoticon
       return meaning
     end
   end
