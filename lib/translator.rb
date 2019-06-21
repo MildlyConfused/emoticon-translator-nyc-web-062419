@@ -15,6 +15,13 @@ end
 
 def get_japanese_emoticon
   # code goes here
+  emos = load_library(path)
+  emos['get_emoticon'].each do |e, j|
+    if e == english_emoticon
+      return j
+    end
+  end
+  return "Sorry, that emoticon was not found"
 end
 
 def get_english_meaning
