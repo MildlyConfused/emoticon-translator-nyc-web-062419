@@ -23,6 +23,14 @@ def get_japanese_emoticon(path, english_emoticon)
   "Sorry, that emoticon was not found"
 end
 
-def get_english_meaning
-  # code goes here
+
+def get_english_meaning(path, japanese_emoticon)
+  emos = load_library(path)
+  emos['get_meaning'].each do |emo, meaning|
+    if emo == japanese_emoticon
+      return meaning
+    end
+  end
+  return "Sorry, that emoticon was not found"
+
 end
