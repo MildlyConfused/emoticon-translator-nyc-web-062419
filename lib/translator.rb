@@ -13,7 +13,7 @@ def load_library(path)
   hash
 end
 
-def get_japanese_emoticon
+def get_japanese_emoticon(path, english_emoticon)
   # code goes here
   emos = load_library(path)
   emos['get_emoticon'].each do |e, j|
