@@ -10,7 +10,7 @@ def load_library(path)
     return_hash['get_meaning'][emoticons[1]] = meaning
     return_hash['get_emoticon'][emoticons[0]] = emoticons[1]
   end
-  return_hash
+  return hash
 
 end
 
