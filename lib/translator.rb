@@ -6,6 +6,7 @@ def load_library(path)
   # code goes here
   emoticons = YAML.load_file(path)
   hash = {'get_meaning' => {}, 'get_emoticon' => {}}
+  
 
 end
 
